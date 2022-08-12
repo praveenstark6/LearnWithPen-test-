@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .root {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 10s ease;
+        position: relative;
+      }
+      .root:hover{
+        transform: rotate(10000deg);
+      }
+      
+      .wing{
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        background-color: sandybrown;
+        border: 10px solid steelblue;
+        border-radius: 50px;
+      }
+      .one{
+        height: 200px;
+        width: 50px;
+        bottom: 10px;
+      }
+      .two{
+        height: 200px;
+        width: 50px;
+        top: 10px;
+      }
+      .three{
+        left: 10px;
+      }
+      .four{
+        right: 10px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      <div class="wing one"></div>
+      <div class="wing two"></div>
+      <div class="wing three"></div>
+      <div class="wing four"></div>
+    </div>
+  </body>
+</html>
